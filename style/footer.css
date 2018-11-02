@@ -3,6 +3,8 @@ footer {
   position: relative;
   bottom: 0;
   min-height: 80px;
+  display: flex;
+  flex-direction: row;
 }
 footer figure {
   margin: 0;
@@ -12,9 +14,14 @@ footer figure {
   color: white;
   padding-top: 15px;
   padding-left: 25px;
+  padding-right: 65px;
+}
+footer figure:last-child {
+  padding-right: 0;
 }
 footer figure figcaption {
   padding-left: 10px;
+  font-size: 14pt;
 }
 footer figure figcaption a {
   text-decoration: underline;

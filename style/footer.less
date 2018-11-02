@@ -4,6 +4,8 @@ footer {
   position: relative;
   bottom: 0;
   min-height: 80px;
+  display: flex;
+  flex-direction: row;
 
   figure{
     margin: 0;
@@ -13,9 +15,15 @@ footer {
     color: @FontColorNav;
     padding-top: 15px;
     padding-left: 25px;
+    padding-right: 65px;
+
+    &:last-child {
+      padding-right: 0;
+    }
 
     figcaption {
       padding-left: 10px;
+      font-size: @FontSizeForNav - 2pt;
 
       a {
         text-decoration: underline;
