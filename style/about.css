@@ -55,3 +55,37 @@ footer figure figcaption a {
 footer p {
   margin: 0;
 }
+body {
+  font-family: 'Kosugi Maru', sans-serif;
+}
+body .start {
+  font-size: 18pt;
+  margin: 20px auto 0 auto;
+  text-align: center;
+  max-width: 500px;
+}
+body .center {
+  color: #d71f35;
+  font-size: 19pt;
+  max-width: 140px;
+  margin: 40px auto 0 auto;
+}
+body .center:after {
+  content: "";
+  display: block;
+  width: 67px;
+  border-top: 6px solid #3e3934;
+  margin: 15px auto 20px;
+}
+body .colored {
+  font-size: 17pt;
+  background-color: #ede3ce;
+  min-height: 300px;
+  margin-top: 50px;
+  padding-left: 30%;
+  padding-top: 30px;
+}
+body .colored div:first-child {
+  color: #d71f35;
+  max-width: 400px;
+}

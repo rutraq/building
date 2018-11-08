@@ -1,3 +1,45 @@
 @import "variables";
 @import "navigation";
 @import "footer";
+
+body {
+  font-family: @FontForNavigation;
+
+  .start {
+    font-size: @FontSizeForNav + 2pt;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    max-width: 500px;
+  }
+
+  .center {
+    color: #d71f35;
+    font-size: @FontSizeForNav + 3pt;
+    max-width: 140px;
+    margin: 40px auto 0 auto;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 67px;
+      border-top: 6px solid #3e3934;
+      margin: 15px auto 20px;
+    }
+  }
+
+  .colored {
+    font-size: @FontSizeForNav + 1pt;
+    background-color: @colorArticle;
+    min-height: 300px;
+    margin-top: 50px;
+    padding-left: 30%;
+    padding-top: 30px;
+
+    div {
+      &:first-child {
+        color: #d71f35;
+        max-width: 400px;
+      }
+    }
+  }
+}
