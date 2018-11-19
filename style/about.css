@@ -77,7 +77,7 @@ body .center:after {
   border-top: 6px solid #3e3934;
   margin: 15px auto 20px;
 }
-body .colored {
+body .red_color {
   font-size: 17pt;
   background-color: #ede3ce;
   min-height: 300px;
@@ -85,7 +85,43 @@ body .colored {
   padding-left: 30%;
   padding-top: 30px;
 }
-body .colored div:first-child {
+body .red_color .underline {
+  font-size: 17pt;
+  font-style: oblique;
+}
+body .red_color .underline:after {
+  content: "";
+  display: block;
+  width: 67px;
+  border-top: 6px solid #3e3934;
+  margin: 15px 0 20px;
+}
+body .red_color .name {
   color: #d71f35;
   max-width: 400px;
+  padding-bottom: 10px;
+}
+body .red_color div:last-child {
+  font-size: 15pt;
+  max-width: 400px;
+}
+body .no_color {
+  font-size: 15pt;
+  min-height: 260px;
+  padding-left: 30%;
+  padding-top: 30px;
+}
+body .no_color .name {
+  max-width: 400px;
+}
+body .no_color .underline {
+  font-size: 17pt;
+  font-style: oblique;
+}
+body .no_color .underline:after {
+  content: "";
+  display: block;
+  width: 67px;
+  border-top: 6px solid #3e3934;
+  margin: 15px 0 20px;
 }
