@@ -45,6 +45,9 @@ footer figure {
 footer figure:last-child {
   padding-right: 0;
 }
+footer figure:first-child {
+  margin-left: 25%;
+}
 footer figure figcaption {
   padding-left: 10px;
   font-size: 14pt;

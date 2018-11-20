@@ -45,6 +45,9 @@ footer figure {
 footer figure:last-child {
   padding-right: 0;
 }
+footer figure:first-child {
+  margin-left: 25%;
+}
 footer figure figcaption {
   padding-left: 10px;
   font-size: 14pt;
@@ -117,11 +120,11 @@ body .no_color {
 body .no_color .name {
   max-width: 400px;
 }
-body .no_color .underline {
+body .underline {
   font-size: 17pt;
   font-style: oblique;
 }
-body .no_color .underline:after {
+body .underline:after {
   content: "";
   display: block;
   width: 67px;
@@ -131,8 +134,11 @@ body .no_color .underline:after {
 body .photos {
   margin-top: 50px;
 }
-body .photos img {
+body .photos .underline {
   margin-left: 30%;
+}
+body .photos img {
+  margin-left: 25%;
   margin-bottom: 20px;
   transition: 0.5s;
 }
@@ -141,4 +147,11 @@ body .photos img:hover {
   box-shadow: -2px -2px 15px rgba(0, 0, 0, 0.5);
   transition: 0.5s;
   transform: translate(5px, 5px);
+}
+body .photos img.zoom {
+  position: absolute;
+  left: 16vw;
+  top: 80vh;
+  transition: 0.5s;
+  transform: scale(2, 2);
 }

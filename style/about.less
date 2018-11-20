@@ -75,26 +75,30 @@ body {
      .name {
       max-width: 400px;
     }
+  }
 
-    .underline {
-      font-size: @FontSizeForNav + 1pt;
-      font-style: oblique;
+  .underline {
+    font-size: @FontSizeForNav + 1pt;
+    font-style: oblique;
 
-      &:after {
-        content: "";
-        display: block;
-        width: 67px;
-        border-top: 6px solid #3e3934;
-        margin: 15px 0 20px;
-      }
+    &:after {
+      content: "";
+      display: block;
+      width: 67px;
+      border-top: 6px solid #3e3934;
+      margin: 15px 0 20px;
     }
   }
 
   .photos {
     margin-top: 50px;
 
-    img {
+    .underline {
       margin-left: 30%;
+    }
+
+    img {
+      margin-left: 25%;
       margin-bottom: 20px;
       transition: 0.5s;
 
@@ -104,6 +108,14 @@ body {
         transition: 0.5s;
         transform: translate(5px, 5px);
       }
+    }
+
+    img.zoom {
+      position: absolute;
+      left: 16vw;
+      top: 80vh;
+      transition: 0.5s;
+      transform: scale(2, 2);
     }
   }
 }
