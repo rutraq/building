@@ -105,9 +105,12 @@ body .red_color div:last-child {
   font-size: 15pt;
   max-width: 400px;
 }
+body #no_margin {
+  margin-top: 0;
+}
 body .no_color {
   font-size: 15pt;
-  min-height: 260px;
+  min-height: 230px;
   padding-left: 30%;
   padding-top: 30px;
 }
@@ -124,4 +127,18 @@ body .no_color .underline:after {
   width: 67px;
   border-top: 6px solid #3e3934;
   margin: 15px 0 20px;
+}
+body .photos {
+  margin-top: 50px;
+}
+body .photos img {
+  margin-left: 30%;
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+body .photos img:hover {
+  cursor: pointer;
+  box-shadow: -2px -2px 15px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+  transform: translate(5px, 5px);
 }
